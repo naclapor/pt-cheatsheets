@@ -1,0 +1,2 @@
+- [Pentestmonkey](https://pentestmonkey.net/tools/web-shells/php-reverse-shell)
+- [Reverse shell generator](https://www.revshells.com/)

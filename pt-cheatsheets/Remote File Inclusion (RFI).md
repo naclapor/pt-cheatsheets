@@ -1,0 +1,2 @@
+- [Penterster's Promiscuous Notebook](https://ppn.snovvcrash.rocks/pentest/web/lfi-rfi)
+- [HackTricks](https://book.hacktricks.xyz/pentesting-web/file-inclusion)
