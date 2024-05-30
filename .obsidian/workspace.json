@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5a710d41439342ba",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "e690f6299e62a752",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pt-cheatsheets/Windows Privilege Escalation.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -158,14 +146,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5a710d41439342ba",
+  "active": "e690f6299e62a752",
   "lastOpenFiles": [
+    "pt-cheatsheets/Windows Privilege Escalation.md",
+    "pt-cheatsheets.md",
+    "README.md",
+    "pt-cheatsheets/Enumeration.md",
+    "cheatsheets/Enumeration.md",
+    "cheatsheets",
     "pt-cheatsheets/XSS.md",
     "pt-cheatsheets/Port Forwarding.md",
-    "README.md",
     "pt-cheatsheets/Linux Privilege Escalation.md",
-    "pt-cheatsheets/Windows Privilege Escalation.md",
-    "pt-cheatsheets/Enumeration.md",
     "pt-cheatsheets/Path Traversal and Local File Inclusion (LFI).md",
     "pt-cheatsheets/Web Application Pentesting.md",
     "pt-cheatsheets/Password Attacks.md",
