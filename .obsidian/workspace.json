@@ -13,7 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "privilege_escalation/Windows_Privilege_Escalation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "88b0f42ff3288ec5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "pt-cheatsheets/Enumeration.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "0c3506e223c24fe2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "34ae8d380de21e32",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "reconnaissance/Reconnaissance.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "pt-cheatsheets/Enumeration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "pt-cheatsheets/Enumeration.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "pt-cheatsheets/Enumeration.md"
               }
             }
           }
@@ -146,16 +177,31 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "944515014afa2ecc",
+  "active": "88b0f42ff3288ec5",
   "lastOpenFiles": [
-    "pt-cheatsheets/Windows_Privilege_Escalation.md",
-    "pt-cheatsheets/Path_Traversal_and_Local_File_Inclusion_(LFI).md",
-    "pt-cheatsheets/Path_Traversal_and_Local_File_Inclusion_(LFI).md",
+    "reconnaissance/Reconnaissance.md",
+    "pt-cheatsheets/Enumeration.md",
     "README.md",
+    "reconnaissance",
+    "file_uploads",
+    "reverse_shell",
+    "port_forwarding_and_tunneling",
+    "privilege_escalation",
+    "password_attacks",
+    "pt-cheatsheets/Untitled",
+    "port_forwarding_and_tunneling/SSH_Tunneling.md",
+    "privilege_escalation/Windows_Privilege_Escalation.md",
+    "port_forwarding_and_tunneling/Port_Forwarding.md",
+    "pt-cheatsheets/SQL_Vulerabilities.md",
     "pt-cheatsheets/Web_Application_Pentesting.md",
+    "pt-cheatsheets/Client_Side_Attacks.md",
+    "pt-cheatsheets/Path_Traversal_and_Local_File_Inclusion_(LFI).md",
+    "pt-cheatsheets/Remote_File_Inclusion_(RFI).md",
+    "reverse_shell/msfvenom_payload.md",
+    "port_forwarding_and_tunneling/Ligolo-ng.md",
     "Enumeration.md",
-    "pt-cheatsheets/Password_Attacks.md",
-    "pt-cheatsheets/Linux_Privilege_Escalation.md",
+    "password_attacks/Password_Attacks.md",
+    "privilege_escalation/Linux_Privilege_Escalation.md",
     "pt-cheatsheets/Command_Injection.md",
     "pt-cheatsheets/Path+Traversal.md",
     "pt-cheatsheets/Path.md",
@@ -167,14 +213,7 @@
     "\"/pt-cheatsheets/XSS\".md",
     "pt-cheatsheets/Web.md",
     "pt-cheatsheets.md",
-    "pt-cheatsheets/Enumeration.md",
     "cheatsheets/Enumeration.md",
-    "cheatsheets",
-    "pt-cheatsheets/Port_Forwarding.md",
-    "pt-cheatsheets/Client_Side_Attacks.md",
-    "pt-cheatsheets/SQL_Vulerabilities.md",
-    "pt-cheatsheets/Remote_File_Inclusion_(RFI).md",
-    "pt-cheatsheets/File_Uploads.md",
-    "pt-cheatsheets"
+    "cheatsheets"
   ]
 }

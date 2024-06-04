@@ -1,19 +1,3 @@
-## NMAP
----
-### TCP
-
-```shell
-sudo nmap -sC -sV -O <target>
-
-sudo nmap -sC -sV -O -p- <target>
-```
-
-### UDP
-
-```shell
-sudo nmap -sU <target>
-```
-
 ## SMB (139-445)
 ---
 

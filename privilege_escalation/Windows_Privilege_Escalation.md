@@ -22,6 +22,8 @@ Get-LocalGroup
 Get-LocalGroupMember group
 Get-LocalGroupMember administrators
 
+runas /user:utente cmd
+
 Get-ItemProperty "HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*" | select displayname
 
 Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\*" | select displayname
@@ -62,7 +64,7 @@ If the result for Windows doesn't display colors, add this REG value
 ## Enumeration
 ---
 
-[](https://github.com/BlessedRebuS/OSCP-Pentesting-Cheatsheet/blob/main/README.md#enumeration-1)
+- [OSCP-Cheetsheet](https://github.com/BlessedRebuS/OSCP-Pentesting-Cheatsheet/blob/main/README.md#enumeration-1)
 
 As always, enumerate all the possible things, login to SMB/SSH/Other services with default userames ad passwords or perform a _null login_ as the following
 
@@ -80,6 +82,15 @@ smbclient -L <target> -U ""
 
 ## Service Binary Hijacking
 ---
+
+```powershell
+Get-CimInstance -ClassName win32_service | Select Name,State,PathName | Where-Object {$_.State -like 'Running'}
+```
+
+```powershell
+icacls "C:\...\file.exe"
+```
+
 ### PowerUp
 
 To enable the powershell scripting capability:
@@ -227,6 +238,10 @@ If a task is executed periodically, we can exploit the called program if we have
 
 ```powershell
 schtasks /query /fo LIST /v
+
+ln-ò»[]DP.OSB
+
+schtasks /query /fo LIST /v | findstr /B /C:"Folder" /C:"TaskName" /C:"Run As User" /C:"Schedule" /C:"Scheduled Task State" /C:"Schedule Type" /C:"Repeat: Every" /C:"Comment"
 ```
 
 Eventually we can use `findstr` if we want to search for something specific. After that we can replace the program with a simple .exe that creates a new admin user.
